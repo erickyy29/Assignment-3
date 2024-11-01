@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form id="heron" class="calculator-form">
+            <fieldset>
+                <legend>Heron's Formula</legend>
+                <label for="heron-a">Side A:</label>
+                <input type="number" id="heron-a" required value="0" min="0">
+
+                <label for="heron-b">Side B:</label>
+                <input type="number" id="heron-b" required value="0" min="0">
+
+                <label for="heron-c">Side C:</label>
+                <input type="number" id="heron-c" required value="0" min="0">
+
+                <label for="heron-result">Area Result:</label>
+                <input type="text" id="heron-result" required readonly>
+
+                <input type="submit" value="Calculate">
+            </fieldset>
+        </form>
+
+        <form id="ambig" class="calculator-form">
+            <fieldset>
+                <legend>Ambiguous Case</legend>
+                <label for="ambig-angle-A">Angle A:</label>
+                <input type="number" id="ambig-angle-A" required value="0" min="1" max="179">
+
+                <label for="ambig-side-a">Side A:</label>
+                <input type="number" id="ambig-side-a" required value="0" min="0" step="0.01">
+
+                <label for="ambig-side-b">Side B:</label>
+                <input type="number" id="ambig-side-b" required value="0" min="0" step="0.01">
+
+                <label for="ambig-result">Triangle Type:</label>
+                <input type="text" id="ambig-result" required readonly>
+
+                <input type="submit" value="Calculate">
+            </fieldset>
+        </form>
+
+        <form id="poly" class="calculator-form">
+            <fieldset>
+                <legend>Polynomial Function</legend>
+                <label for="poly-coeff">Coefficients (space-separated):</label>
+                <input type="text" id="poly-coeff" required value="0">
+
+                <label for="poly-exp">Exponents (space-separated):</label>
+                <input type="text" id="poly-exp" required value="0">
+
+                <label for="poly-x">X value:</label>
+                <input type="number" id="poly-x" required value="0" step="0.01">
+
+                <label for="poly-result">Result:</label>
+                <textarea id="poly-result" required readonly></textarea>
+
+                <input type="submit" value="Calculate">
+            </fieldset>
+        </form>
+
+        <form id="newt" class="calculator-form">
+            <fieldset>
+                <legend>Newton's Method</legend>
+                <label for="newt-g">Root Guess:</label>
+                <input type="text" id="newt-g" required value="0">
+
+                <label for="newt-result">Root Approximation:</label>
+                <input type="text" id="newt-result" required readonly>
+
+                <input type="submit" value="Calculate">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
